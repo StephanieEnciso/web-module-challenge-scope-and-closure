@@ -28,11 +28,17 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+
+  Counter1 is a variable that has the function counterMaker as a value. It functions as a variable that stores the information that the function counterMaker outputs. While counter2 is the the name of an actual function.
   
   2. Which of the two uses a closure? How can you tell?
+
+  Counter1 because the nested function is accessing the varibale from its parent function even though the parent function was already terminated.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better? 
+     
+     counter1 would be useful when one has to keep track of points for a game because the variable will store the count of the counterMaker function. counter2 would be better for something where no stored data is needed such that the count needs to be restarted at 0.
 */
 
 // counter1 code
